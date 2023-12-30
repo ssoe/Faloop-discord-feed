@@ -36,3 +36,9 @@ If you dont want to have pings based on expansion, remove
 and <@&{srank_exp}> from content strings.
 
 Fork and PRs welcome.
+
+Example images of posts made (spawn and edited death)
+
+https://i.imgur.com/dmxIGiA.png
+
+https://i.imgur.com/lZWZWEX.png
