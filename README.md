@@ -1,6 +1,8 @@
 # Faloop-discord-feed
 A Discord feed using webhooks from faloop.app
 
+This is part of a larger project that I decided to make public. The larger project is currently private, where this is used as a backup S rank feed for my hunt discord HoneyHunts (light).
+
 faloopApiLogin.py handles login and token logic. 
 
 faloopSocketIO.py uses faloopAPiLogin to create a token for authing the socketio feed. Due to faloop limitations, you can only get S rank spawns from your own region. I am from Light and get from both Light and Chaos. Your mileage may vary.
