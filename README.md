@@ -3,6 +3,12 @@ A Discord feed using webhooks from faloop.app
 
 This is part of a larger project that I decided to make public. The larger project is currently private, where this is used as a backup S rank feed for my hunt discord HoneyHunts (light).
 
+Hunts.db is a snapshop of database from larger project. It uses zone_positions table to map internal faloop positions (zonePoiIds) to X/Y coords as the faloop feed does not have X/Y coords.
+
+Example spawn event:
+
+{'type': 'mob', 'subType': 'report', 'data': {'action': 'spawn', 'mobId': 2962, 'worldId': 42, 'zoneInstance': 0, 'data': {'zoneId': 134, 'zonePoiIds': [27], 'timestamp': '2023-11-28T19:53:54.648Z', 'window': 1}}}
+
 faloopApiLogin.py handles login and token logic. 
 
 faloopSocketIO.py uses faloopAPiLogin to create a token for authing the socketio feed. Due to faloop limitations, you can only get S rank spawns from your own region. I am from Light and get from both Light and Chaos. Your mileage may vary.
