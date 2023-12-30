@@ -5,6 +5,8 @@ This is part of a larger project that I decided to make public. The larger proje
 
 Hunts.db is a snapshop of database from larger project. It uses zone_positions table to map internal faloop positions (zonePoiIds) to X/Y coords as the faloop feed does not have X/Y coords.
 
+I also included a standalone faloop db with this table.
+
 Example spawn event:
 
 {'type': 'mob', 'subType': 'report', 'data': {'action': 'spawn', 'mobId': 2962, 'worldId': 42, 'zoneInstance': 0, 'data': {'zoneId': 134, 'zonePoiIds': [27], 'timestamp': '2023-11-28T19:53:54.648Z', 'window': 1}}}
