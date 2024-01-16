@@ -8,6 +8,7 @@ import discord
 import requests
 import sqlite3
 import time
+import random
 
 sio = socketio.Client(reconnection=True, reconnection_delay=5, reconnection_attempts=0)
 
@@ -26,7 +27,7 @@ shb_srank = os.getenv("SHB_SRANK")
 ew_srank = os.getenv("EW_SRANK")
 c_arr_srank = os.getenv("C_ARR_SRANK")
 c_hw_srank = os.getenv("C_HW_SRANK")
-c_sb_srank = os.getenv("C_SB_SRANK")
+c_sb_srank = os.getenv("C_SB_SRNAK")
 c_shb_srank = os.getenv("C_SHB_SRANK")
 c_ew_srank = os.getenv("C_EW_SRANK")
 mobs = huntDic['MobDictionary']
@@ -90,7 +91,7 @@ def connectFaloopSocketio(session_id, jwt_token):
 #{'type': 'mob', 'subType': 'report', 'data': {'action': 'spawn', 'mobId': 2962, 'worldId': 42, 'zoneInstance': 0, 'data': {'zoneId': 134, 'zonePoiIds': [27], 'timestamp': '2023-11-28T19:53:54.648Z', 'window': 1}}}
 #dead srank
 #{'type': 'mob', 'subType': 'report', 'data': {'action': 'death', 'mobId': 10618, 'worldId': 33, 'zoneInstance': 3, 'data': {'num': 1, 'startedAt': '2023-11-29T19:27:23.322Z', 'prevStartedAt': '2023-11-23T19:48:46.901Z'}}}
-def filter_data(data):  # sourcery skip: extract-method
+def filter_data(data): 
     if (data.get('type') == 'mob' and 
         data.get('subType') == 'report' and 
         data.get('data', {}).get('action') == 'spawn' and
@@ -113,7 +114,7 @@ def filter_data(data):  # sourcery skip: extract-method
             hunt_id = data['data']['mobId']
             instance = data['data']['zoneInstance']
             if str(world_id) in worlds:
-                print(data)
+                #print(data)
                 sendDeath(data, hunt_id, world_id, instance)
     
 def sendSpawn(data, hunt_id, world_id, zone_id, pos_id, instance):
@@ -159,9 +160,9 @@ def sendSpawn(data, hunt_id, world_id, zone_id, pos_id, instance):
         embed.set_image(url=mapurl)
         message = faloopWebhook.send(embed=embed, wait=True, content=contentstring)
         message_ids[(hunt_id, world_id, instance)] = (message.id, timer, x, y)
-        #faloopWebhook.send(data)
-        print(data)
-        print("Message sent to Discord successfully.")
+
+        #print(data)
+        #print("Message sent to Discord successfully.")
 
 def sendDeath(data, hunt_id, world_id, instance):
     zone_id = zoneIds[(hunt_id, world_id, instance)]
@@ -203,14 +204,18 @@ def sendDeath(data, hunt_id, world_id, instance):
     
     sRankDead = f"Srank {mobName[0]} on {worldName[0]} in instance: {instance} died"
     faloopWebhook.send(sRankDead)
-    #faloopWebhook.send(data)
-    #print("death sent to Discord successfully.")
+    #autismo map fix
+    actorID = random.randint(250, 1000000)
+    rawX = ((float(x) - 1) / 41) * 2048 - 1024
+    rawY = ((float(y) - 1) / 41) * 2048 - 1024
+    deathtimer = str(int(time.time()))
     deleteMapping(world_id, zone_id, instance)
-    #print("mapping yeeted")
+    saveMappingToDB(hunt_id, world_id, instance, zone_id, x, y, int(rawX), int(rawY), actorID, timer)
+    saveDeathToDb(hunt_id, world_id, message_id, deathtimer, actorID)
     del zoneIds[(hunt_id, world_id, instance)]    
     del message_ids[(hunt_id, world_id, instance)]
     
-def getCoords(pos_id, zone_id):  # sourcery skip: extract-method
+def getCoords(pos_id, zone_id):
     try:
         with sqlite3.connect('hunts.db') as conn:
             cursor = conn.cursor()
@@ -230,10 +235,32 @@ def deleteMapping(world_id, zone_id, instance):
             query = "DELETE FROM mapping WHERE world_id = ? AND zone_id = ? AND instance = ?"
             cursor.execute(query, (world_id, zone_id, instance))
             conn.commit()
-            print("mapping yeeted")
+            #print("mapping yeeted")
     except sqlite3.Error as e:
         print(f"Database error: {e}")
         return f"Failed to delete entries due to DB error: {e}"
+    
+def saveMappingToDB(hunt_id, world_id, instance, zone_id, flagXcoord, flagYcoord, rawX, rawY, actorID, timestamp):
+    conn = sqlite3.connect('hunts.db')
+    cursor = conn.cursor()
+    
+    cursor.execute('''
+    INSERT OR REPLACE INTO mapping (hunt_id, world_id, instance, zone_id, flagXcoord, flagYcoord, rawX, rawY, actorID, timestamp)
+    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+    ''', (hunt_id, world_id, instance, zone_id, flagXcoord, flagYcoord, rawX, rawY, actorID, timestamp))
+    
+    conn.commit()
+    conn.close()
+    
+def saveDeathToDb(hunt_id, world_id, message_id, deathtimer, actorID):
+    conn = sqlite3.connect('hunts.db')
+    cursor = conn.cursor()
+    cursor.execute('''
+                   INSERT OR REPLACE INTO hunts (hunt_id, world_id, message_id, deathtimer, actorID)
+                   VALUES (?, ?, ?, ?, ?)
+                   '''), (hunt_id, world_id, message_id, deathtimer, actorID)
+    conn.commit()
+    conn.close()
 
 try:
     
