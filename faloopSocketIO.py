@@ -98,11 +98,11 @@ def filter_data(data):
         str(data['data']['mobId']) in mobs and
         data['data']['mobId'] not in ss):
             world_id = data['data']['worldId']
-            hunt_id = data['data']['mobId']
-            instance = data['data']['zoneInstance']
-            zone_id = data['data']['data']['zoneId']
-            pos_id = int(data['data']['data']['zonePoiIds'][0])
             if str(world_id) in worlds:
+                hunt_id = data['data']['mobId']
+                instance = data['data']['zoneInstance']
+                zone_id = data['data']['data']['zoneId']
+                pos_id = int(data['data']['data']['zonePoiIds'][0])                
                 sendSpawn(data, hunt_id, world_id, zone_id, pos_id, instance)
 
     if (data.get('type') == 'mob' and 
@@ -111,10 +111,9 @@ def filter_data(data):
         str(data['data']['mobId']) in mobs and
         data['data']['mobId'] not in ss):
             world_id = data['data']['worldId']
-            hunt_id = data['data']['mobId']
-            instance = data['data']['zoneInstance']
             if str(world_id) in worlds:
-                #print(data)
+                hunt_id = data['data']['mobId']
+                instance = data['data']['zoneInstance']                #print(data)
                 sendDeath(data, hunt_id, world_id, instance)
     
 def sendSpawn(data, hunt_id, world_id, zone_id, pos_id, instance):
