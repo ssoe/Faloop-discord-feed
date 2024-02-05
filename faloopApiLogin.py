@@ -6,7 +6,7 @@ import os
 load_dotenv()
 # Step 1: Obtain Session ID and JWT
 def getJWTsessionID():
-    url = "https://faloop.app/api/auth/user/refresh"
+    url = "https://faloop.app/api-v2/auth/user/refresh"
     headers = {
         "Origin": "https://faloop.app",
         "Referer": "https://faloop.app",
@@ -23,7 +23,7 @@ def getJWTsessionID():
 
 # Step 2: Use the Session ID and JWT to Login
 def login(session_id, jwt_token, username, password):
-    url = "https://faloop.app/api/auth/user/login"
+    url = "https://faloop.app/api-v2/auth/user/login"
     headers = {
         "Origin": "https://faloop.app",
         "Referer": "https://faloop.app/login",

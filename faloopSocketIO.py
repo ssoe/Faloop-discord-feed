@@ -242,11 +242,10 @@ def deleteMapping(world_id, zone_id, instance):
 def saveMappingToDB(hunt_id, world_id, instance, zone_id, flagXcoord, flagYcoord, rawX, rawY, actorID, timestamp):
     conn = sqlite3.connect('hunts.db')
     cursor = conn.cursor()
-    
     cursor.execute('''
     INSERT OR REPLACE INTO mapping (hunt_id, world_id, instance, zone_id, flagXcoord, flagYcoord, rawX, rawY, actorID, timestamp)
     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-    ''', (hunt_id, world_id, instance, zone_id, flagXcoord, flagYcoord, rawX, rawY, actorID, timestamp))
+    '''), (hunt_id, world_id, instance, zone_id, flagXcoord, flagYcoord, rawX, rawY, actorID, timestamp)
     
     conn.commit()
     conn.close()
