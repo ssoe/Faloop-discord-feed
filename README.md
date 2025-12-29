@@ -16,7 +16,9 @@ Example death event:
 {"type":"mobworldkill","subType":"recentAdd","data":{"id":2102789,"mobId2":"thousand_cast_theda","worldId2":"phoenix","zoneInstance":null,"spawnedAt":"2025-12-29T13:31:18.078Z","killedAt":"2025-12-29T13:35:25.081Z","zoneId2":"north_shroud","isFailed":false}}
 
 faloopApiLogin.py handles login and token logic.
-This is based on faloop integration here:
+
+This is based on faloop integration implemented here (ty nephy):
+
 https://github.com/SlashNephy/Divination/tree/master/FaloopIntegration
 
 faloopSocketIO.py uses faloopAPiLogin to create a token for authing the socketio feed. Due to faloop limitations, you can only get S rank spawns from your own region. I am from Light and get from both Light and Chaos. Your mileage may vary.
