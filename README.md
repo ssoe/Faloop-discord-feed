@@ -1,26 +1,25 @@
 # Faloop-discord-feed
+
 A Discord feed using webhooks from faloop.app
 
-This is part of a larger project that I decided to make public. The larger project is currently private, where this is used as a backup S rank feed for my hunt discord HoneyHunts (light).
-
+This is part of a larger project that I decided to make public. The larger project is called Honeyhunts, where this is used as a backup S rank feed for my hunt discord.
 Hunts.db is a snapshop of database from larger project. It uses zone_positions table to map internal faloop positions (zonePoiIds) to X/Y coords as the faloop feed does not have X/Y coords.
 
 I also included a standalone faloop db with this table.
 
 Example spawn event:
 
-{'type': 'mob', 'subType': 'report', 'data': {'action': 'spawn', 'mobId': 2962, 'worldId': 42, 'zoneInstance': 0, 'data': {'zoneId': 134, 'zonePoiIds': [27], 'timestamp': '2023-11-28T19:53:54.648Z', 'window': 1}}}
+{"type":"mob","subType":"report","data":{"action":"spawn","id":{"mobId":"zona_seeker","worldId":"shiva"},"data":{"zoneId2":"western_thanalan","zonePoiIds":[162],"timestamp":"2025-12-29T14:34:23.353Z","window":1,"stage":null}}}
 
 Example death event:
 
-{'type': 'mob', 'subType': 'report', 'data': {'action': 'death', 'mobId': 10618, 'worldId': 33, 'zoneInstance': 3, 'data': {'num': 1, 'startedAt': '2023-11-29T19:27:23.322Z', 'prevStartedAt': '2023-11-23T19:48:46.901Z'}}}
+{"type":"mobworldkill","subType":"recentAdd","data":{"id":2102789,"mobId2":"thousand_cast_theda","worldId2":"phoenix","zoneInstance":null,"spawnedAt":"2025-12-29T13:31:18.078Z","killedAt":"2025-12-29T13:35:25.081Z","zoneId2":"north_shroud","isFailed":false}}
 
-faloopApiLogin.py handles login and token logic. 
+faloopApiLogin.py handles login and token logic.
 
 faloopSocketIO.py uses faloopAPiLogin to create a token for authing the socketio feed. Due to faloop limitations, you can only get S rank spawns from your own region. I am from Light and get from both Light and Chaos. Your mileage may vary.
-.env-example has a link to the hunt dictionary I use. Edit as see you fit to your usecase.
 The bot will ping different roles, change these to fit your server.
-If you dont want to have pings based on expansion, remove 
+If you dont want to have pings based on expansion, remove
 
         if zone_id in arr:
             srank_exp = arr_srank
@@ -34,11 +33,3 @@ If you dont want to have pings based on expansion, remove
             srank_exp = ew_srank
 
 and <@&{srank_exp}> from content strings.
-
-Fork and PRs welcome.
-
-Example images of posts made (spawn and edited death)
-
-https://i.imgur.com/dmxIGiA.png
-
-https://i.imgur.com/lZWZWEX.png

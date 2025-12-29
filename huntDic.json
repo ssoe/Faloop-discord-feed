@@ -1,0 +1,961 @@
+{
+    "WorldDictionary": {
+        "33": [
+            "Twintania"
+        ],
+        "36": [
+            "Lich"
+        ],
+        "42": [
+            "Zodiark"
+        ],
+        "56": [
+            "Phoenix"
+        ],
+        "66": [
+            "Odin"
+        ],
+        "67": [
+            "Shiva"
+        ],
+        "402": [
+            "Alpha"
+        ],
+        "403": [
+            "Raiden"
+        ]
+    },
+    "CWorldDictionary": {
+        "39": [
+            "Omega"
+        ],
+        "71": [
+            "Le Moogle"
+        ],
+        "80": [
+            "Cerberus"
+        ],
+        "83": [
+            "Louisoix"
+        ],
+        "85": [
+            "Spriggan"
+        ],
+        "97": [
+            "Ragnarok"
+        ],
+        "400": [
+            "Sagittarius"
+        ],
+        "401": [
+            "Phantom"
+        ]
+    },
+    "SWorldDictionary": {
+        "412": [
+            "Titania"
+        ],
+        "413": [
+            "Innocence"
+        ],
+        "414": [
+            "Pixie"
+        ],
+        "415": [
+            "Tycoon"
+        ]
+    },
+    "MWorldDictionary": {
+        "21": [
+            "Ravana"
+        ],
+        "22": [
+            "Bismarck"
+        ],
+        "86": [
+            "Sephirot"
+        ],
+        "87": [
+            "Sophia"
+        ],
+        "88": [
+            "Zurvan"
+        ]
+    },
+    "EUWorldDictionary": {
+        "21": [
+            "Ravana"
+        ],
+        "22": [
+            "Bismarck"
+        ],
+        "33": [
+            "Twintania"
+        ],
+        "36": [
+            "Lich"
+        ],
+        "39": [
+            "Omega"
+        ],
+        "42": [
+            "Zodiark"
+        ],
+        "56": [
+            "Phoenix"
+        ],
+        "66": [
+            "Odin"
+        ],
+        "67": [
+            "Shiva"
+        ],
+        "71": [
+            "Le Moogle"
+        ],
+        "80": [
+            "Cerberus"
+        ],
+        "83": [
+            "Louisoix"
+        ],
+        "85": [
+            "Spriggan"
+        ],
+        "86": [
+            "Sephirot"
+        ],
+        "87": [
+            "Sophia"
+        ],
+        "88": [
+            "Zurvan"
+        ],
+        "97": [
+            "Ragnarok"
+        ],
+        "400": [
+            "Sagittarius"
+        ],
+        "401": [
+            "Phantom"
+        ],
+        "402": [
+            "Alpha"
+        ],
+        "403": [
+            "Raiden"
+        ],
+        "412": [
+            "Titania"
+        ],
+        "413": [
+            "Innocence"
+        ],
+        "414": [
+            "Pixie"
+        ],
+        "415": [
+            "Tycoon"
+        ]
+    },
+    "MobDictionary": {
+        "2953": [
+            "Laideronnette"
+        ],
+        "2954": [
+            "Wulgaru"
+        ],
+        "2955": [
+            "Mindflayer"
+        ],
+        "2956": [
+            "Thousand-cast Theda"
+        ],
+        "2957": [
+            "Zona Seeker"
+        ],
+        "2958": [
+            "Brontes"
+        ],
+        "2959": [
+            "Lampalagua"
+        ],
+        "2960": [
+            "Nunyunuwi"
+        ],
+        "2961": [
+            "Minhocao"
+        ],
+        "2962": [
+            "Croque-mitaine"
+        ],
+        "2963": [
+            "Croakadile"
+        ],
+        "2964": [
+            "The Garlok"
+        ],
+        "2965": [
+            "Bonnacon"
+        ],
+        "2966": [
+            "Nandi"
+        ],
+        "2967": [
+            "Chernobog"
+        ],
+        "2968": [
+            "Safat"
+        ],
+        "2969": [
+            "Agrippa the Mighty"
+        ],
+        "4374": [
+            "Kaiser Behemoth"
+        ],
+        "4375": [
+            "Senmurv"
+        ],
+        "4376": [
+            "The Pale Rider"
+        ],
+        "4377": [
+            "Gandarewa"
+        ],
+        "4378": [
+            "Bird of Paradise"
+        ],
+        "4380": [
+            "Leucrotta"
+        ],
+        "5984": [
+            "Okina"
+        ],
+        "5985": [
+            "Gamma"
+        ],
+        "5986": [
+            "Orghana"
+        ],
+        "5987": [
+            "Udumbara"
+        ],
+        "5988": [
+            "Bone Crawler"
+        ],
+        "5989": [
+            "Salt and Light"
+        ],
+        "8653": [
+            "Aglaope"
+        ],
+        "8890": [
+            "Ixtab"
+        ],
+        "8895": [
+            "Gunitt"
+        ],
+        "8900": [
+            "Tarchia"
+        ],
+        "8905": [
+            "Tyger"
+        ],
+        "8910": [
+            "Forgiven Pedantry"
+        ],
+        "8915": [
+            "SS Rank: Forgiven Rebellion"
+        ],
+        "8916": [
+            "SS Minion: Forgiven Gossip"
+        ],
+        "10615": [
+            "SS Rank: Ker"
+        ],
+        "10616": [
+            "SS Minion: Ker Shroud"
+        ],
+        "10617": [
+            "Burfurlur the Canny"
+        ],
+        "10618": [
+            "Sphatika"
+        ],
+        "10619": [
+            "Armstrong"
+        ],
+        "10620": [
+            "Ruminator"
+        ],
+        "10621": [
+            "Ophioneus"
+        ],
+        "10622": [
+            "Narrow-rift"
+        ],
+        "12754": [
+            "Neyoozoteel"
+        ],
+        "13156": [
+            "Atticus the Primogenitor"
+        ],
+        "13360": [
+            "Kirlirger the Abhorrent"
+        ],
+        "13399": [
+            "Sansheya"
+        ],
+        "13406": [
+            "SS RANK: Arch Aethereater"
+        ],
+        "13407": [
+            "SS Minion: Crystal Incarnation"
+        ],
+        "13437": [
+            "The Forecaster"
+        ],
+        "13444": [
+            "Ihnuxokiy"
+        ]
+    },
+    "FateDictionary": {
+        "556": [
+            "Core Blimey"
+        ],
+        "831": [
+            "Cerf's Up"
+        ],
+        "1259": [
+            "Not Just a Tribute"
+        ],
+        "1862": [
+            "You Are What You Drink"
+        ],
+        "1871": [
+            "The Serpentlord Seethes"
+        ]
+    },
+    "FateStatus": {
+        "1": [
+            "Preparation: Talk to NPC to start"
+        ],
+        "2": [
+            "Running"
+        ],
+        "3": [
+            "Completed"
+        ],
+        "4": [
+            "FATE FAILED"
+        ]
+    },
+    "zoneDictionary": {
+        "134": [
+            "Middle La Noscea"
+        ],
+        "135": [
+            "Lower La Noscea"
+        ],
+        "137": [
+            "Eastern La Noscea"
+        ],
+        "138": [
+            "Western La Noscea"
+        ],
+        "139": [
+            "Upper La Noscea"
+        ],
+        "140": [
+            "Western Thanalan"
+        ],
+        "141": [
+            "Central Thanalan"
+        ],
+        "145": [
+            "Eastern Thanalan"
+        ],
+        "146": [
+            "Southern Thanalan"
+        ],
+        "147": [
+            "Northern Thanalan"
+        ],
+        "148": [
+            "Central Shroud"
+        ],
+        "152": [
+            "East Shroud"
+        ],
+        "153": [
+            "South Shroud"
+        ],
+        "154": [
+            "North Shroud"
+        ],
+        "155": [
+            "Coerthas Central Highlands"
+        ],
+        "156": [
+            "Mor Dhona"
+        ],
+        "180": [
+            "Outer La Noscea"
+        ],
+        "397": [
+            "Coerthas Western Highlands"
+        ],
+        "398": [
+            "Dravanian Foreland"
+        ],
+        "399": [
+            "Dravanian Hinterlands"
+        ],
+        "400": [
+            "Churning Mists"
+        ],
+        "401": [
+            "Sea of Clouds"
+        ],
+        "402": [
+            "Azys Lla"
+        ],
+        "612": [
+            "Fringes"
+        ],
+        "613": [
+            "The Ruby Sea"
+        ],
+        "614": [
+            "Yanxia"
+        ],
+        "620": [
+            "The Peaks"
+        ],
+        "621": [
+            "The Lochs"
+        ],
+        "622": [
+            "Azim Steppe"
+        ],
+        "813": [
+            "Lakeland"
+        ],
+        "814": [
+            "Kholusia"
+        ],
+        "815": [
+            "Amh Araeng"
+        ],
+        "816": [
+            "il Mheg"
+        ],
+        "817": [
+            "Rak'tika Greatwood"
+        ],
+        "818": [
+            "The Tempest"
+        ],
+        "956": [
+            "Labyrinthos"
+        ],
+        "957": [
+            "Thavnair"
+        ],
+        "958": [
+            "Garlemald"
+        ],
+        "959": [
+            "Mare Lamentorum"
+        ],
+        "960": [
+            "Ultima Thule"
+        ],
+        "961": [
+            "Elpis"
+        ],
+        "1187": [
+            "Urqopacha"
+        ],
+        "1188": [
+            "Kozama'uka"
+        ],
+        "1189": [
+            "Yak T'el"
+        ],
+        "1190": [
+            "Shaaloani"
+        ],
+        "1191": [
+            "Heritage Found"
+        ],
+        "1192": [
+            "Living Memory"
+        ]
+    },
+    "ABDictionary": {
+        "2919": [
+            "White Joker"
+        ],
+        "2920": [
+            "Stinging Sophie"
+        ],
+        "2921": [
+            "Monarch Ogrefly"
+        ],
+        "2922": [
+            "Phecda"
+        ],
+        "2923": [
+            "Sewer Syrup"
+        ],
+        "2924": [
+            "Ovjang"
+        ],
+        "2925": [
+            "Gatling"
+        ],
+        "2926": [
+            "Albin the Ashen"
+        ],
+        "2927": [
+            "Flame Sergeant Dalvag"
+        ],
+        "2928": [
+            "Skogs Fru"
+        ],
+        "2929": [
+            "Barbastelle"
+        ],
+        "2930": [
+            "Bloody Mary"
+        ],
+        "2931": [
+            "Dark Helmet"
+        ],
+        "2932": [
+            "Myradrosh"
+        ],
+        "2933": [
+            "Vuokho"
+        ],
+        "2934": [
+            "Naul"
+        ],
+        "2935": [
+            "Leech King"
+        ],
+        "2936": [
+            "Forneus"
+        ],
+        "2937": [
+            "Melt"
+        ],
+        "2938": [
+            "Ghede Ti Malice"
+        ],
+        "2939": [
+            "Girtab"
+        ],
+        "2940": [
+            "Alectryon"
+        ],
+        "2941": [
+            "Sabotender Bailarina"
+        ],
+        "2942": [
+            "Maahes"
+        ],
+        "2943": [
+            "Zanig oh"
+        ],
+        "2944": [
+            "Dalvags Final Flame"
+        ],
+        "2945": [
+            "Vogaal Ja"
+        ],
+        "2946": [
+            "Unktehi"
+        ],
+        "2947": [
+            "Hellsclaw"
+        ],
+        "2948": [
+            "Nahn"
+        ],
+        "2949": [
+            "Marberry"
+        ],
+        "2950": [
+            "Cornu"
+        ],
+        "2951": [
+            "Marraco"
+        ],
+        "2952": [
+            "Kurrea"
+        ],
+        "4350": [
+            "Alteci"
+        ],
+        "4351": [
+            "Kreutzet"
+        ],
+        "4352": [
+            "Gnath cometdrone"
+        ],
+        "4353": [
+            "Thextera"
+        ],
+        "4354": [
+            "Pterygotus"
+        ],
+        "4355": [
+            "false gigantopithecus"
+        ],
+        "4356": [
+            "Scitalis"
+        ],
+        "4357": [
+            "the Scarecrow"
+        ],
+        "4358": [
+            "Squonk"
+        ],
+        "4359": [
+            "Sanu Vali of Dancing Wings"
+        ],
+        "4360": [
+            "Lycidas"
+        ],
+        "4361": [
+            "Omni"
+        ],
+        "4362": [
+            "Mirka"
+        ],
+        "4363": [
+            "Lyuba"
+        ],
+        "4364": [
+            "Pylraster"
+        ],
+        "4365": [
+            "Lord of the Wyverns"
+        ],
+        "4366": [
+            "Slipkinx Steeljoints"
+        ],
+        "4367": [
+            "Stolas"
+        ],
+        "4368": [
+            "Bune"
+        ],
+        "4369": [
+            "Agathos"
+        ],
+        "4370": [
+            "Enkelados"
+        ],
+        "4371": [
+            "Sisiutl"
+        ],
+        "4372": [
+            "Campacti"
+        ],
+        "4373": [
+            "stench blossom"
+        ],
+        "5990": [
+            "Orcus"
+        ],
+        "5991": [
+            "Erle"
+        ],
+        "5992": [
+            "Vochstein"
+        ],
+        "5993": [
+            "Aqrabuamelu"
+        ],
+        "5994": [
+            "Mahisha"
+        ],
+        "5995": [
+            "Luminare"
+        ],
+        "5996": [
+            "Funa Yurei"
+        ],
+        "5997": [
+            "Oni Yumemi"
+        ],
+        "5998": [
+            "Gajasura"
+        ],
+        "5999": [
+            "Angada"
+        ],
+        "6000": [
+            "Girimekhala"
+        ],
+        "6001": [
+            "Sum"
+        ],
+        "6002": [
+            "Gauki Strongblade"
+        ],
+        "6003": [
+            "Guhuo Niao"
+        ],
+        "6004": [
+            "Deidar"
+        ],
+        "6005": [
+            "Gyorai Quickstrike"
+        ],
+        "6006": [
+            "Kurma"
+        ],
+        "6007": [
+            "Aswang"
+        ],
+        "6008": [
+            "Shadow-dweller Yamini"
+        ],
+        "6009": [
+            "Ouzelum"
+        ],
+        "6010": [
+            "Gwas-y-neidr"
+        ],
+        "6011": [
+            "Buccaboo"
+        ],
+        "6012": [
+            "Manes"
+        ],
+        "6013": [
+            "Kiwa"
+        ],
+        "8654": [
+            "the mudman"
+        ],
+        "8655": [
+            "O Poorest Pauldia"
+        ],
+        "8656": [
+            "Domovoi"
+        ],
+        "8657": [
+            "Vulpangue"
+        ],
+        "8891": [
+            "Supay"
+        ],
+        "8892": [
+            "Grassman"
+        ],
+        "8893": [
+            "Mindmaker"
+        ],
+        "8894": [
+            "Pachamama"
+        ],
+        "8896": [
+            "Rusalka"
+        ],
+        "8897": [
+            "Baal"
+        ],
+        "8898": [
+            "Gilshs Aath Swiftclaw"
+        ],
+        "8899": [
+            "Deacon"
+        ],
+        "8901": [
+            "Maliktender"
+        ],
+        "8902": [
+            "Sugaar"
+        ],
+        "8903": [
+            "Worm of the Well"
+        ],
+        "8904": [
+            "Juggler Hecatomb"
+        ],
+        "8906": [
+            "Nuckelavee"
+        ],
+        "8907": [
+            "Nariphon"
+        ],
+        "8908": [
+            "La Velue"
+        ],
+        "8909": [
+            "Itzpapalotl"
+        ],
+        "8911": [
+            "Lil Murderer"
+        ],
+        "8912": [
+            "Huracan"
+        ],
+        "8913": [
+            "Coquecigrue"
+        ],
+        "8914": [
+            "Indomitable"
+        ],
+        "10623": [
+            "Storsie"
+        ],
+        "10624": [
+            "hulder"
+        ],
+        "10625": [
+            "Yilan"
+        ],
+        "10626": [
+            "Sugriva"
+        ],
+        "10627": [
+            "Minerva"
+        ],
+        "10628": [
+            "Aegeiros"
+        ],
+        "10629": [
+            "lunatender queen"
+        ],
+        "10630": [
+            "mousse princess"
+        ],
+        "10631": [
+            "Gurangatch"
+        ],
+        "10632": [
+            "petalodus"
+        ],
+        "10633": [
+            "Fan Ail"
+        ],
+        "10634": [
+            "Arch-Eta"
+        ],
+        "10635": [
+            "green Archon"
+        ],
+        "10636": [
+            "ü-u-ü-u"
+        ],
+        "10637": [
+            "Vajrakumara"
+        ],
+        "10638": [
+            "Iravati"
+        ],
+        "10639": [
+            "warmonger"
+        ],
+        "10640": [
+            "Emperors rose"
+        ],
+        "10641": [
+            "daphnia magna"
+        ],
+        "10642": [
+            "genesis rock"
+        ],
+        "10643": [
+            "Yumcax"
+        ],
+        "10644": [
+            "Shockmaw"
+        ],
+        "10645": [
+            "level cheater"
+        ],
+        "10646": [
+            "Oskh Rhei"
+        ],
+        "12692": [
+            "Starcrier"
+        ],
+        "12753": [
+            "Rrax Yity'a"
+        ],
+        "13144": [
+            "Mad Maguey"
+        ],
+        "13145": [
+            "Chupacabra"
+        ],
+        "13146": [
+            "The Slammer"
+        ],
+        "13147": [
+            "Go'ozoabek'be"
+        ],
+        "13148": [
+            "Leafscourge Hadoll Ja"
+        ],
+        "13149": [
+            "Xty'iinbek"
+        ],
+        "13150": [
+            "Nopalitender Fabuloso"
+        ],
+        "13151": [
+            "Uktena"
+        ],
+        "13152": [
+            "Gallowsbeak"
+        ],
+        "13153": [
+            "Gargant"
+        ],
+        "13154": [
+            "Jewel Bearer"
+        ],
+        "13155": [
+            "13th Child"
+        ],
+        "13157": [
+            "Heshuala"
+        ],
+        "13158": [
+            "Urna Variabilis"
+        ],
+        "13361": [
+            "Queen Hawk"
+        ],
+        "13362": [
+            "Nechuciho"
+        ],
+        "13400": [
+            "Yehehetoaua'pyo"
+        ],
+        "13401": [
+            "Keheniheyamewi"
+        ],
+        "13435": [
+            "Sally the Sweeper"
+        ],
+        "13436": [
+            "Cat's Eye"
+        ],
+        "13442": [
+            "The Raintriller"
+        ],
+        "13443": [
+            "Pkuucha"
+        ]
+    }
+}
